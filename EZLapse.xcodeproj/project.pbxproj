@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3B1556E1BF771D900D85C53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B1556D1BF771D900D85C53 /* AppDelegate.swift */; };
+		A3B155731BF771D900D85C53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B155711BF771D900D85C53 /* Main.storyboard */; };
+		A3B155751BF771D900D85C53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B155741BF771D900D85C53 /* Assets.xcassets */; };
+		A3B155781BF771D900D85C53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B155761BF771D900D85C53 /* LaunchScreen.storyboard */; };
+		A3B155831BF771D900D85C53 /* EZLapseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B155821BF771D900D85C53 /* EZLapseTests.swift */; };
+		A3B1558E1BF771D900D85C53 /* EZLapseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B1558D1BF771D900D85C53 /* EZLapseUITests.swift */; };
+		A3B1559F1BF7722500D85C53 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B1559B1BF7722500D85C53 /* CameraController.swift */; };
+		A3B155A01BF7722500D85C53 /* LapseGalleryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B1559C1BF7722500D85C53 /* LapseGalleryController.swift */; };
+		A3B155A11BF7722500D85C53 /* LapsesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B1559D1BF7722500D85C53 /* LapsesModel.swift */; };
+		A3B155A21BF7722500D85C53 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B1559E1BF7722500D85C53 /* PhotoModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3B1557F1BF771D900D85C53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3B155621BF771D800D85C53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3B155691BF771D900D85C53;
+			remoteInfo = EZLapse;
+		};
+		A3B1558A1BF771D900D85C53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3B155621BF771D800D85C53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3B155691BF771D900D85C53;
+			remoteInfo = EZLapse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3B1556A1BF771D900D85C53 /* EZLapse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZLapse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B1556D1BF771D900D85C53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3B155721BF771D900D85C53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3B155741BF771D900D85C53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3B155771BF771D900D85C53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3B155791BF771D900D85C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B1557E1BF771D900D85C53 /* EZLapseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EZLapseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B155821BF771D900D85C53 /* EZLapseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZLapseTests.swift; sourceTree = "<group>"; };
+		A3B155841BF771D900D85C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B155891BF771D900D85C53 /* EZLapseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EZLapseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B1558D1BF771D900D85C53 /* EZLapseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZLapseUITests.swift; sourceTree = "<group>"; };
+		A3B1558F1BF771D900D85C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B1559B1BF7722500D85C53 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		A3B1559C1BF7722500D85C53 /* LapseGalleryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LapseGalleryController.swift; sourceTree = "<group>"; };
+		A3B1559D1BF7722500D85C53 /* LapsesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LapsesModel.swift; sourceTree = "<group>"; };
+		A3B1559E1BF7722500D85C53 /* PhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3B155671BF771D900D85C53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B1557B1BF771D900D85C53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B155861BF771D900D85C53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3B155611BF771D800D85C53 = {
+			isa = PBXGroup;
+			children = (
+				A3B1556C1BF771D900D85C53 /* EZLapse */,
+				A3B155811BF771D900D85C53 /* EZLapseTests */,
+				A3B1558C1BF771D900D85C53 /* EZLapseUITests */,
+				A3B1556B1BF771D900D85C53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3B1556B1BF771D900D85C53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3B1556A1BF771D900D85C53 /* EZLapse.app */,
+				A3B1557E1BF771D900D85C53 /* EZLapseTests.xctest */,
+				A3B155891BF771D900D85C53 /* EZLapseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3B1556C1BF771D900D85C53 /* EZLapse */ = {
+			isa = PBXGroup;
+			children = (
+				A3B1559B1BF7722500D85C53 /* CameraController.swift */,
+				A3B1559C1BF7722500D85C53 /* LapseGalleryController.swift */,
+				A3B1559D1BF7722500D85C53 /* LapsesModel.swift */,
+				A3B1559E1BF7722500D85C53 /* PhotoModel.swift */,
+				A3B1556D1BF771D900D85C53 /* AppDelegate.swift */,
+				A3B155711BF771D900D85C53 /* Main.storyboard */,
+				A3B155741BF771D900D85C53 /* Assets.xcassets */,
+				A3B155761BF771D900D85C53 /* LaunchScreen.storyboard */,
+				A3B155791BF771D900D85C53 /* Info.plist */,
+			);
+			path = EZLapse;
+			sourceTree = "<group>";
+		};
+		A3B155811BF771D900D85C53 /* EZLapseTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3B155821BF771D900D85C53 /* EZLapseTests.swift */,
+				A3B155841BF771D900D85C53 /* Info.plist */,
+			);
+			path = EZLapseTests;
+			sourceTree = "<group>";
+		};
+		A3B1558C1BF771D900D85C53 /* EZLapseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A3B1558D1BF771D900D85C53 /* EZLapseUITests.swift */,
+				A3B1558F1BF771D900D85C53 /* Info.plist */,
+			);
+			path = EZLapseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3B155691BF771D900D85C53 /* EZLapse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3B155921BF771D900D85C53 /* Build configuration list for PBXNativeTarget "EZLapse" */;
+			buildPhases = (
+				A3B155661BF771D900D85C53 /* Sources */,
+				A3B155671BF771D900D85C53 /* Frameworks */,
+				A3B155681BF771D900D85C53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EZLapse;
+			productName = EZLapse;
+			productReference = A3B1556A1BF771D900D85C53 /* EZLapse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3B1557D1BF771D900D85C53 /* EZLapseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3B155951BF771D900D85C53 /* Build configuration list for PBXNativeTarget "EZLapseTests" */;
+			buildPhases = (
+				A3B1557A1BF771D900D85C53 /* Sources */,
+				A3B1557B1BF771D900D85C53 /* Frameworks */,
+				A3B1557C1BF771D900D85C53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3B155801BF771D900D85C53 /* PBXTargetDependency */,
+			);
+			name = EZLapseTests;
+			productName = EZLapseTests;
+			productReference = A3B1557E1BF771D900D85C53 /* EZLapseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3B155881BF771D900D85C53 /* EZLapseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3B155981BF771D900D85C53 /* Build configuration list for PBXNativeTarget "EZLapseUITests" */;
+			buildPhases = (
+				A3B155851BF771D900D85C53 /* Sources */,
+				A3B155861BF771D900D85C53 /* Frameworks */,
+				A3B155871BF771D900D85C53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3B1558B1BF771D900D85C53 /* PBXTargetDependency */,
+			);
+			name = EZLapseUITests;
+			productName = EZLapseUITests;
+			productReference = A3B155891BF771D900D85C53 /* EZLapseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3B155621BF771D800D85C53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Jeffrey Chen";
+				TargetAttributes = {
+					A3B155691BF771D900D85C53 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					A3B1557D1BF771D900D85C53 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = A3B155691BF771D900D85C53;
+					};
+					A3B155881BF771D900D85C53 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = A3B155691BF771D900D85C53;
+					};
+				};
+			};
+			buildConfigurationList = A3B155651BF771D800D85C53 /* Build configuration list for PBXProject "EZLapse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3B155611BF771D800D85C53;
+			productRefGroup = A3B1556B1BF771D900D85C53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3B155691BF771D900D85C53 /* EZLapse */,
+				A3B1557D1BF771D900D85C53 /* EZLapseTests */,
+				A3B155881BF771D900D85C53 /* EZLapseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3B155681BF771D900D85C53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B155781BF771D900D85C53 /* LaunchScreen.storyboard in Resources */,
+				A3B155751BF771D900D85C53 /* Assets.xcassets in Resources */,
+				A3B155731BF771D900D85C53 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B1557C1BF771D900D85C53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B155871BF771D900D85C53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3B155661BF771D900D85C53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B1559F1BF7722500D85C53 /* CameraController.swift in Sources */,
+				A3B155A11BF7722500D85C53 /* LapsesModel.swift in Sources */,
+				A3B1556E1BF771D900D85C53 /* AppDelegate.swift in Sources */,
+				A3B155A21BF7722500D85C53 /* PhotoModel.swift in Sources */,
+				A3B155A01BF7722500D85C53 /* LapseGalleryController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B1557A1BF771D900D85C53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B155831BF771D900D85C53 /* EZLapseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B155851BF771D900D85C53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3B1558E1BF771D900D85C53 /* EZLapseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3B155801BF771D900D85C53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3B155691BF771D900D85C53 /* EZLapse */;
+			targetProxy = A3B1557F1BF771D900D85C53 /* PBXContainerItemProxy */;
+		};
+		A3B1558B1BF771D900D85C53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3B155691BF771D900D85C53 /* EZLapse */;
+			targetProxy = A3B1558A1BF771D900D85C53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3B155711BF771D900D85C53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3B155721BF771D900D85C53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3B155761BF771D900D85C53 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3B155771BF771D900D85C53 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3B155901BF771D900D85C53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3B155911BF771D900D85C53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3B155931BF771D900D85C53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EZLapse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jycprogrammer.EZLapse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3B155941BF771D900D85C53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EZLapse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jycprogrammer.EZLapse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A3B155961BF771D900D85C53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EZLapseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jycprogrammer.EZLapseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EZLapse.app/EZLapse";
+			};
+			name = Debug;
+		};
+		A3B155971BF771D900D85C53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EZLapseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jycprogrammer.EZLapseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EZLapse.app/EZLapse";
+			};
+			name = Release;
+		};
+		A3B155991BF771D900D85C53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EZLapseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jycprogrammer.EZLapseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EZLapse;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A3B1559A1BF771D900D85C53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EZLapseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jycprogrammer.EZLapseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EZLapse;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3B155651BF771D800D85C53 /* Build configuration list for PBXProject "EZLapse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B155901BF771D900D85C53 /* Debug */,
+				A3B155911BF771D900D85C53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3B155921BF771D900D85C53 /* Build configuration list for PBXNativeTarget "EZLapse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B155931BF771D900D85C53 /* Debug */,
+				A3B155941BF771D900D85C53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3B155951BF771D900D85C53 /* Build configuration list for PBXNativeTarget "EZLapseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B155961BF771D900D85C53 /* Debug */,
+				A3B155971BF771D900D85C53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3B155981BF771D900D85C53 /* Build configuration list for PBXNativeTarget "EZLapseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3B155991BF771D900D85C53 /* Debug */,
+				A3B1559A1BF771D900D85C53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3B155621BF771D800D85C53 /* Project object */;
+}
