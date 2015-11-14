@@ -94,12 +94,10 @@ class ViewController: UIViewController {
 
           
           //TODO assume for now that directory /dummy/ has already been made.
-          
-          //What I want to do:
-          // get size of /dummy/
+
+          //get size of /dummy/
           // store picture at dummy/[size].jpg
-          print(self.getPATHofNextPic())
-      
+          self.writeImageToDisk(image, url: NSURL(fileURLWithPath:self.getPATHofNextPic()))
         }
       })
     }
@@ -107,25 +105,23 @@ class ViewController: UIViewController {
   }
   
   func getPATHofNextPic() -> String {
-    
     let paths = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
     var documentsDirectory: String = paths[0]
     documentsDirectory = documentsDirectory + "/dummy"
     
     var size = 0;
     do{
-    size = try NSFileManager().contentsOfDirectoryAtPath(documentsDirectory).count
+      size = try NSFileManager().contentsOfDirectoryAtPath(documentsDirectory).count
     }catch let error as NSError {
       print(error.localizedDescription)
     }
     return documentsDirectory + "/\(size).jpg"
   }
 
+  
   func writeImageToDisk(image: UIImage,  url: NSURL) {
-    
-    let imageData = UIImagePNGRepresentation(image)
+    let imageData = UIImageJPEGRepresentation(image, 1)
     imageData!.writeToURL(url, atomically: true)
-    
   }
 
   
