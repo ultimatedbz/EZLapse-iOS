@@ -17,6 +17,10 @@
 		A3B155A01BF7722500D85C53 /* LapseGalleryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B1559C1BF7722500D85C53 /* LapseGalleryController.swift */; };
 		A3B155A11BF7722500D85C53 /* LapsesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B1559D1BF7722500D85C53 /* LapsesModel.swift */; };
 		A3B155A21BF7722500D85C53 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B1559E1BF7722500D85C53 /* PhotoModel.swift */; };
+		A3B155A61BF7F92300D85C53 /* PushNoAnimationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B155A51BF7F92300D85C53 /* PushNoAnimationSegue.swift */; };
+		A3B155AA1BF803FE00D85C53 /* InitialNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B155A91BF803FE00D85C53 /* InitialNavController.swift */; };
+		A3B155AC1BF80D2000D85C53 /* EmptyGalleryControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B155AB1BF80D2000D85C53 /* EmptyGalleryControllerViewController.swift */; };
+		A3B155AE1BF8231600D85C53 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B155AD1BF8231600D85C53 /* GalleryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		A3B1559C1BF7722500D85C53 /* LapseGalleryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LapseGalleryController.swift; sourceTree = "<group>"; };
 		A3B1559D1BF7722500D85C53 /* LapsesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LapsesModel.swift; sourceTree = "<group>"; };
 		A3B1559E1BF7722500D85C53 /* PhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		A3B155A51BF7F92300D85C53 /* PushNoAnimationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNoAnimationSegue.swift; sourceTree = "<group>"; };
+		A3B155A91BF803FE00D85C53 /* InitialNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialNavController.swift; sourceTree = "<group>"; };
+		A3B155AB1BF80D2000D85C53 /* EmptyGalleryControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyGalleryControllerViewController.swift; sourceTree = "<group>"; };
+		A3B155AD1BF8231600D85C53 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,10 @@
 				A3B155741BF771D900D85C53 /* Assets.xcassets */,
 				A3B155761BF771D900D85C53 /* LaunchScreen.storyboard */,
 				A3B155791BF771D900D85C53 /* Info.plist */,
+				A3B155A51BF7F92300D85C53 /* PushNoAnimationSegue.swift */,
+				A3B155A91BF803FE00D85C53 /* InitialNavController.swift */,
+				A3B155AB1BF80D2000D85C53 /* EmptyGalleryControllerViewController.swift */,
+				A3B155AD1BF8231600D85C53 /* GalleryTableViewCell.swift */,
 			);
 			path = EZLapse;
 			sourceTree = "<group>";
@@ -265,10 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B155AA1BF803FE00D85C53 /* InitialNavController.swift in Sources */,
 				A3B1559F1BF7722500D85C53 /* CameraController.swift in Sources */,
 				A3B155A11BF7722500D85C53 /* LapsesModel.swift in Sources */,
+				A3B155A61BF7F92300D85C53 /* PushNoAnimationSegue.swift in Sources */,
+				A3B155AC1BF80D2000D85C53 /* EmptyGalleryControllerViewController.swift in Sources */,
 				A3B1556E1BF771D900D85C53 /* AppDelegate.swift in Sources */,
 				A3B155A21BF7722500D85C53 /* PhotoModel.swift in Sources */,
+				A3B155AE1BF8231600D85C53 /* GalleryTableViewCell.swift in Sources */,
 				A3B155A01BF7722500D85C53 /* LapseGalleryController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,11 +1,114 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MO8-zG-uhb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="83Z-9G-gdW">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Lapse Gallery Controller-->
+        <scene sceneID="YXO-By-Ag1">
+            <objects>
+                <tableViewController id="MDy-sb-BAK" customClass="LapseGalleryController" customModule="EZLapse" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="151" sectionHeaderHeight="28" sectionFooterHeight="28" id="7jS-ER-mVp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="MyCell" rowHeight="151" id="cfx-US-jzi" customClass="GalleryTableViewCell" customModule="EZLapse" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="151"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cfx-US-jzi" id="Uek-qC-XiB">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HYB-wE-HJD">
+                                            <rect key="frame" x="16" y="16" width="118" height="118"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="HYB-wE-HJD" secondAttribute="height" multiplier="1:1" id="ZL3-9X-Qgn"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgx-xY-Z06">
+                                            <rect key="frame" x="142" y="64" width="450" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="HYB-wE-HJD" secondAttribute="bottom" constant="8" id="3c4-Yo-v1e"/>
+                                        <constraint firstItem="HYB-wE-HJD" firstAttribute="top" secondItem="Uek-qC-XiB" secondAttribute="topMargin" constant="8" id="GAI-fx-7RW"/>
+                                        <constraint firstItem="Bgx-xY-Z06" firstAttribute="centerY" secondItem="Uek-qC-XiB" secondAttribute="centerY" id="Pu0-Hw-MnG"/>
+                                        <constraint firstItem="HYB-wE-HJD" firstAttribute="leading" secondItem="Uek-qC-XiB" secondAttribute="leadingMargin" constant="8" id="WEe-PZ-dqR"/>
+                                        <constraint firstItem="Bgx-xY-Z06" firstAttribute="leading" secondItem="HYB-wE-HJD" secondAttribute="trailing" constant="8" symbolic="YES" id="eCJ-o4-V6O"/>
+                                        <constraint firstItem="Bgx-xY-Z06" firstAttribute="trailing" secondItem="Uek-qC-XiB" secondAttribute="trailingMargin" id="tH8-SB-ZgJ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="galleryImage" destination="HYB-wE-HJD" id="PBe-0Y-uaE"/>
+                                    <outlet property="galleryLabel" destination="Bgx-xY-Z06" id="pEo-0j-C1t"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MDy-sb-BAK" id="aFL-lP-LJ5"/>
+                            <outlet property="delegate" destination="MDy-sb-BAK" id="6kc-il-u6G"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Zwx-jr-exH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6Ec-Lm-aym">
+                            <connections>
+                                <segue destination="MO8-zG-uhb" kind="popoverPresentation" popoverAnchorBarButtonItem="6Ec-Lm-aym" id="lWf-f4-u8A">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fgu-mR-yQC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-643" y="491"/>
+        </scene>
+        <!--Empty Gallery Controller View Controller-->
+        <scene sceneID="WOd-UQ-eXL">
+            <objects>
+                <viewController id="sAl-np-Ldq" customClass="EmptyGalleryControllerViewController" customModule="EZLapse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="272-FG-MMz"/>
+                        <viewControllerLayoutGuide type="bottom" id="DjF-Tn-nuB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DUk-b6-Wfd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="You do not have any EZLapses ): Press the blue plus mark to get started!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xeH-gI-khg">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xeH-gI-khg" firstAttribute="centerX" secondItem="DUk-b6-Wfd" secondAttribute="centerX" id="d55-Y3-jrb"/>
+                            <constraint firstItem="xeH-gI-khg" firstAttribute="centerY" secondItem="DUk-b6-Wfd" secondAttribute="centerY" id="dAy-1M-b72"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cLR-xF-e5R">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7Ma-c0-TVB">
+                            <connections>
+                                <segue destination="MO8-zG-uhb" kind="popoverPresentation" popoverAnchorBarButtonItem="7Ma-c0-TVB" id="Khr-mx-uNe">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fdf-AB-jkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-657" y="1406"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="pn7-6M-gCR">
             <objects>
@@ -83,7 +186,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flq-s2-PXz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="176" y="432"/>
+            <point key="canvasLocation" x="240" y="1026"/>
+        </scene>
+        <!--Initial Nav Controller-->
+        <scene sceneID="ZVB-VK-fpn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="83Z-9G-gdW" customClass="InitialNavController" customModule="EZLapse" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Mm-TH-h5N">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MDy-sb-BAK" kind="show" identifier="one" id="CBf-az-mdz"/>
+                        <segue destination="sAl-np-Ldq" kind="show" identifier="two" id="ldS-Oz-vZ6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qg8-fz-ism" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1463" y="979"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lWf-f4-u8A"/>
+    </inferredMetricsTieBreakers>
 </document>
